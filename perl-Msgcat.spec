@@ -1,7 +1,7 @@
 %define name perl-Msgcat
 %define real_name Msgcat
 %define version 1.03
-%define release 17mdk
+%define release %mkrel 18
 
 Summary: Msgcat, a small Perl module for XPG4 message catalog functions
 Name: %{name}
@@ -27,6 +27,8 @@ chmod 0644 README Changes
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make OPTIMIZE="$RPM_OPT_FLAGS"
+
+%check
 %make test
 
 %install

@@ -12,7 +12,6 @@ Group: Development/Perl
 URL: http://www.cpan.org
 Source: ftp://ftp.pasteur.fr/pub/computing/CPAN/modules/by-module/Locale/%{real_name}-%{version}.tar.bz2
 BuildRequires:	perl-devel
-Buildroot: %{_tmppath}/%{name}-root
 
 %description
 This is Msgcat, a small Perl modules for systems which support the XPG4 message

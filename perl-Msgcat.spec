@@ -1,7 +1,7 @@
 %define name perl-Msgcat
 %define real_name Msgcat
 %define version 1.03
-%define release %mkrel 19
+%define release %mkrel 20
 
 Summary: Msgcat, a small Perl module for XPG4 message catalog functions
 Name: %{name}

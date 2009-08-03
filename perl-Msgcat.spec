@@ -1,25 +1,25 @@
-%define name perl-Msgcat
-%define real_name Msgcat
-%define version 1.03
-%define release %mkrel 20
+%define upstream_name    Msgcat
+%define upstream_version 1.03
 
-Summary: Msgcat, a small Perl module for XPG4 message catalog functions
-Name: %{name}
-Version: %{version}
-Release: %{release}
-License: GPL
-Group: Development/Perl
-URL: http://www.cpan.org
-Source: ftp://ftp.pasteur.fr/pub/computing/CPAN/modules/by-module/Locale/%{real_name}-%{version}.tar.bz2
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:    Msgcat, a small Perl module for XPG4 message catalog functions
+License:    GPL
+Group:      Development/Perl
+Url:        http://www.cpan.org
+Source0:    ftp://ftp.pasteur.fr/pub/computing/CPAN/modules/by-module/Locale/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:	perl-devel
-Buildroot: %{_tmppath}/%{name}-root
+Buildroot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This is Msgcat, a small Perl modules for systems which support the XPG4 message
 catalog functions : catopen(3), catgets(3) and catclose(4).
 
 %prep
-%setup -q -n %{real_name}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 # for docs files (fpons)
 chmod 0644 README Changes
@@ -44,4 +44,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/*/*
 %{perl_vendorarch}/Locale
 %{perl_vendorarch}/auto/Locale
-

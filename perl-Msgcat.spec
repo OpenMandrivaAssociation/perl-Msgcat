@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 4
+Release:    %mkrel 5
 
 Summary:    Msgcat, a small Perl module for XPG4 message catalog functions
 License:    GPL

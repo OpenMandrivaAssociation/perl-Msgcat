@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	19
 License:	GPLv2
 Group:		Development/Perl
-Url:		http://www.cpan.org
+Url:		https://www.cpan.org
 Source0:	ftp://ftp.pasteur.fr/pub/computing/CPAN/modules/by-module/Locale/%{modname}-%{modver}.tar.bz2
 BuildRequires:	perl-devel
 
